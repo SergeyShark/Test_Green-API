@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Тестовое задание: Сергей Сатанин</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-contaner">
+      <div class="methods-container">
+        <form class="instance-form" id="instance-form">
+          <label for="id-instance"></label>
+          <input
+            type="text"
+            id="id-instance"
+            placeholder="Введите ID Instance"
+          />
+          <label for="api-token"></label>
+          <input type="text" id="api-token" placeholder="Введите API Token" />
+          <button id="get-settings">Get Settings</button>
+          <button id="get-state">Get State Instance</button>
+          <label for="chat-id-message"></label>
+          <input
+            type="text"
+            id="chat-id-message"
+            placeholder="Введите chatId"
+          />
+          <textarea
+            placeholder="Введите ваше сообщение"
+            name="message"
+            id="message"
+            class="user-message"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <button id="send-message">Send Message</button>
+
+          <label for="chat-id-file"></label>
+          <input type="text" id="chat-id-file" placeholder="Введите chatId" />
+
+          <label for="file-url"></label>
+          <input
+            type="text"
+            id="file-url"
+            placeholder="Введите ссылку файла "
+          />
+
+          <button id="send-file">Send File By URL</button>
+        </form>
+      </div>
+      <div class="response-container">
+        <h2>Ответ:</h2>
+        <textarea
+          name="response"
+          id="response"
+          cols="50"
+          rows="50"
+          readonly
+        ></textarea>
+      </div>
+    </div>
+    <script type="module" src="index.js"></script>
+    <script type="module" src="config.js"></script>
+  </body>
+</html>
